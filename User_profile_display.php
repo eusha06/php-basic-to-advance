@@ -31,4 +31,8 @@ echo "Email: ".$userProfile["email"];
 echo "<br>";
 echo "City: ".$userProfile["city"];
 echo "<br>";
+
+foreach ($userProfile as $key => $value) {
+    echo ucfirst($key) . ": " . $value . "<br>";
+}
 ?>
